@@ -21,7 +21,7 @@ describe("display status", () => {
     act(() => {
       render(
         <WalletManagerProvider
-          defaultChainId={ChainInfoID.Juno1}
+          defaultChainId={ChainInfoID.Terpnet1}
           enabledWalletTypes={[WalletType.Keplr, WalletType.WalletConnectKeplr]}
         >
           <DisplayStatus />

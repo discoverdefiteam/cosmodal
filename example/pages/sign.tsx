@@ -4,7 +4,7 @@ import {
   useWallet,
   useWalletManager,
   ChainInfoID,
-} from "@noahsaso/cosmodal"
+} from "@xiti/cosmodal"
 import type { NextPage } from "next"
 import { useCallback, useState } from "react"
 

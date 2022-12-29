@@ -115,6 +115,42 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     },
     features: ["stargate", "ibc-transfer", "no-legacy-stdTx", "ibc-go"],
   },
+  [ChainInfoID.Terpnet1]: {
+    rpc: "https://terp-testnet.rpc.kjnodes.com/", // test: "https://terp-testnet.rpc.kjnodes.com/"
+    rest: "https://terp-testnet.api.kjnodes.com", // test: "https://terp-testnet.api.kjnodes.com"
+    chainId: ChainInfoID.Terpnet1, // test: "athena-3"
+    chainName: "Terpnet",
+    bip44: {
+      coinType: 118,
+    },
+    bech32Config: Bech32Address.defaultBech32Config("osmo"),
+    currencies: [
+      {
+        coinDenom: "TERPX",
+        coinMinimalDenom: "uterpx",
+        coinDecimals: 6,
+        coinGeckoId: "osmosis",
+        coinImageUrl: "/tokens/osmo.svg",
+        isStakeCurrency: true,
+        isFeeCurrency: false,
+      },
+      {
+        coinDenom: "PERSYX",
+        coinMinimalDenom: "upersyx",
+        coinDecimals: 6,
+        coinGeckoId: "ion",
+        coinImageUrl: "/tokens/ion.png",
+		isStakeCurrency: false,
+		isFeeCurrency: true,
+      },
+    ],
+    gasPriceStep: {
+      low: 0,
+      average: 0,
+      high: 0.025,
+    },
+    features: ["stargate", "ibc-transfer", "no-legacy-stdTx", "ibc-go"],
+  },
   [ChainInfoID.Cosmoshub4]: {
     rpc: "https://rpc-cosmoshub.keplr.app",
     rest: "https://lcd-cosmoshub.keplr.app",
