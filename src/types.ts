@@ -190,7 +190,7 @@ export enum ChainInfoID {
   Evmos_9001_2 = "evmos_9001-2",
   Phoenix1 = "phoenix-1",
   Titan1 = "titan-1",
-  Terpnet1 = "athena-3",
+  Terpnet1 = "athena-4",
   Kava_2222_10 = "kava_2222-10",
   Genesis_29_2 = "genesis_29-2",
 }

@@ -118,18 +118,18 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
   [ChainInfoID.Terpnet1]: {
     rpc: "https://terp-testnet.rpc.kjnodes.com/", // test: "https://terp-testnet.rpc.kjnodes.com/"
     rest: "https://terp-testnet.api.kjnodes.com", // test: "https://terp-testnet.api.kjnodes.com"
-    chainId: ChainInfoID.Terpnet1, // test: "athena-3"
+    chainId: ChainInfoID.Terpnet1, // test: "athena-4"
     chainName: "Terpnet",
     bip44: {
       coinType: 118,
     },
-    bech32Config: Bech32Address.defaultBech32Config("osmo"),
+    bech32Config: Bech32Address.defaultBech32Config("terp"),
     currencies: [
       {
         coinDenom: "TERPX",
         coinMinimalDenom: "uterpx",
         coinDecimals: 6,
-        coinGeckoId: "osmosis",
+        coinGeckoId: "terp",
         coinImageUrl: "/tokens/osmo.svg",
         isStakeCurrency: true,
         isFeeCurrency: false,
@@ -138,10 +138,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
         coinDenom: "PERSYX",
         coinMinimalDenom: "upersyx",
         coinDecimals: 6,
-        coinGeckoId: "ion",
-        coinImageUrl: "/tokens/ion.png",
-		isStakeCurrency: false,
-		isFeeCurrency: true,
+        coinGeckoId: "persy",
+        coinImageUrl: "/tokens/osmo.svg",
+	isStakeCurrency: false,
+        isFeeCurrency: true,
       },
     ],
     gasPriceStep: {
